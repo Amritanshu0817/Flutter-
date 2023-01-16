@@ -1,0 +1,19 @@
+void main(){
+runApp(MaterialApp(
+       home: Scaffold(
+     body: Center(
+         child: ElevatedButton(
+       style: ButtonStyle(
+           backgroundColor: MaterialStateProperty.resolveWith((states) {
+         return Colors.black;
+       })),
+       onPressed: () => {print("I am Pressed!")},
+       child: Text("Press Me!"),
+     )),
+     appBar: AppBar(title: Text("My App Bar")),
+     floatingActionButton: FloatingActionButton(
+       onPressed: () => {print("I Pressed The Floarting Button")},
+       child: Text("+"),
+     ),
+   )));
+   }
