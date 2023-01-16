@@ -1,0 +1,18 @@
+void main() {
+runApp(MaterialApp(
+       home: Scaffold(
+           body: Center(
+               child: Container(
+                   padding: EdgeInsets.all(40),
+                   color: Colors.redAccent,
+                   width: 200,
+                   height: 200,
+                   child: Container(
+                     padding: EdgeInsets.all(20),
+                     color: Colors.blueAccent,
+                     child: Container(
+                       color: Colors.greenAccent,
+                       padding: const EdgeInsets.all(40)
+       ),
+      ))))));
+  }
